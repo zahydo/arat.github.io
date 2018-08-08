@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Architectural Rationale Annotations Tool</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/logo.png"/>
+</head>
+<body>
+
+	
+
+	<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" hidden="true" id="mySidebar">
+		<button class="w3-right-align w3-bar-item w3-button w3-large w3-hover-text-red"
+		onclick="w3_close()">Close <i class="fas fa-window-close fa-lg w3-text-red"></i></button>
+		<button class="w3-center w3-button w3-block w3-left-align" onclick="controlSection('aratSection','arrowARAT')">
+			Sobre ARAT <i id="arrowARAT" class="fa-lg fas fa-caret-down"></i>
+		</button>
+		<div id="aratSection" class="w3-center w3-bar-block w3-hide w3-white">
+			<a href="#" class="w3-bar-item w3-button">Investigación</a>
+			<a href="#" class="w3-bar-item w3-button">Documentación</a>
+		</div>
+		<a href="#" class="w3-center w3-bar-item w3-button"><i class="fas fa-arrow-alt-circle-down fa-lg"></i> Descarga e instalación</a>
+		<a href="#" class="w3-center w3-bar-item w3-button"><i class="fab fa-github fa-lg"></i> Código fuente</a>
+		<a href="#" class="w3-center w3-bar-item w3-button"><i class="fas fa-envelope fa-lg"></i> Contacto</a>
+		<div class="w3-container w3-display-bottommiddle">
+			<a class="sin-linea" href="index.html"><h1 class="arat titulo sinMargin sinPading w3-center conSombra">ARAT</h1></a>
+		</div>
+	</div>
+	<div id="main">
+		<div class="middlepadding">
+			<button id="openNav" title="Abrir menú" class="w3-btn w3-xlarge" onclick="w3_open()"><i class="fas fa-bars fa-lg"></i></button>
+		</div>
+		<div class="middlepadding w3-container w3-display-topright">
+			<button title="Enviar mensaje" class="w3-btn w3-xlarge"><i class="fas fa-envelope fa-lg"></i></button>
+		</div>
+		<div class="w3-content w3-center w3-row big-padding">
+			<a href="principal.html" class="">
+				<img title="Ver más sobre ARAT" id="nonShadow" src="img/logo.png" class="w3-image" alt="Logo ARAT" onmouseover="showShadow()">
+				<img title="Ver más sobre ARAT" id="shadow" src="img/logo1.png" class="w3-image" alt="Logo ARAT" hidden="true" onmouseout="showNonShadow()">
+			</a>
+		</div>
+		<div class="w3-container w3-display-bottomleft footer">
+			<p>Creado por <a href="http://artemisa.unicauca.edu.co/~santiagodorado/" target="_blank">sahydo</a> en el 2018. Todos los derechos reservados</p>
+		</div>
+
+	</div>
+
+	<script src="js/view_functions.js"></script>
+</body>
+</html>
